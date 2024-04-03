@@ -12,8 +12,9 @@ export default function TextMotion() {
         <motion.span
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ ease: easeInOut, duration: 0.5, delay: index / 10 }}
           key={index}
+          transition={{ ease: easeInOut, duration: 0.5, delay: index / 10 }}
+          exit={{ x: "100%", opacity: 0 }}
         >
           {word}{" "}
         </motion.span>
